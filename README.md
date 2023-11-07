@@ -60,22 +60,22 @@ Open one of the projects in PyCharm and add new **Python Interpreter**
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/Miragon/robocorp-cetifications.svg?style=for-the-badge
+[contributors-shield]: https://img.shields.io/github/contributors/Miragon/robocorp-cetification.svg?style=for-the-badge
 
-[contributors-url]: https://github.com/Miragon/robocorp-certifications/graphs/contributors
+[contributors-url]: https://github.com/Miragon/robocorp-certification/graphs/contributors
 
-[forks-shield]: https://img.shields.io/github/forks/Miragon/robocorp-certifications.svg?style=for-the-badge
+[forks-shield]: https://img.shields.io/github/forks/Miragon/robocorp-certification.svg?style=for-the-badge
 
-[forks-url]: https://github.com/Miragon/robocorp-certifications/network/members
+[forks-url]: https://github.com/Miragon/robocorp-certification/network/members
 
-[stars-shield]: https://img.shields.io/github/stars/Miragon/robocorp-certifications.svg?style=for-the-badge
+[stars-shield]: https://img.shields.io/github/stars/Miragon/robocorp-certification.svg?style=for-the-badge
 
-[stars-url]: https://github.com/Miragon/robocorp-certifications/stargazers
+[stars-url]: https://github.com/Miragon/robocorp-certification/stargazers
 
-[issues-shield]: https://img.shields.io/github/issues/Miragon/robocorp-certifications.svg?style=for-the-badge
+[issues-shield]: https://img.shields.io/github/issues/Miragon/robocorp-certification.svg?style=for-the-badge
 
-[issues-url]: https://github.com/Miragon/robocorp-certifications/issues
+[issues-url]: https://github.com/Miragon/robocorp-certification/issues
 
-[license-shield]: https://img.shields.io/github/license/Miragon/robocorp-certifications.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/Miragon/robocorp-certification.svg?style=for-the-badge
 
-[license-url]: https://github.com/Miragon/robocorp-certifications/blob/main/LICENSE
+[license-url]: https://github.com/Miragon/robocorp-certification/blob/main/LICENSE
