@@ -44,8 +44,9 @@ This is the repository that contains the robots for the different levels of cert
 
 ### Setup PyCharm
 
-> Note: PyCharm is missing some of the convenient command from Visual Studio Code.
-> Like bootstrapping a new robot project or uploading a robot to *Control Room*.
+> Note: PyCharm lacks some of the practical commands of Visual Studio Code.
+> For example, bootstrapping a new robot project or uploading a robot to the *Control Room*.
+> But you can use the [rcc](https://robocorp.com/docs/rcc/overview) command line tool to do this.
    
 Open one of the projects in PyCharm and add new **Python Interpreter**
 1. `PyCharm` > `Settings`
