@@ -55,6 +55,7 @@ Open one of the projects in PyCharm and add new **Python Interpreter**
 4. Select `Conda Environment` > `Existing environment`
 5. Select `robocorp` as the existing environment
 
+To run a robot you can use one of the *run configs* under the `.run` folder.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
