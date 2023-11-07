@@ -1,0 +1,619 @@
+V 0.0.4
+T 2023-11-07T14:22:25.660+00:00
+ID 1|12e573e4-7d79-11ee-bd13-acde48001122
+I "sys.platform=darwin"
+I "python=3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:39:40) [Clang 15.0.7 ]"
+M a:"tasks.py"
+SR a|0.003
+M c:"Collect tasks"
+M d:"setup"
+M e:""
+P b:c|d|e|e|0
+ST b|0.003
+M f:"regular"
+M g:"\nCollecting tasks from: tasks.py\n"
+C f|g|0.003
+M h:"stderr"
+M i:"2023-11-07 15:22:26,298 - RPA.core.certificates - INFO - Truststore injection done, using system certificate store to validate HTTPS.\n"
+C h|i|0.637
+M k:"Selenium.__init__"
+M l:"RPA.Browser.Selenium"
+M m:"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/RPA/Browser/Selenium.py"
+P j:k|l|m|e|241
+M n:"METHOD"
+SE j|n|1.636
+M o:"args"
+M p:"tuple"
+M q:"()"
+EA o|p|q
+M r:"kwargs"
+M s:"dict"
+M t:"{}"
+EA r|s|t
+M u:"PASS"
+EE n|u|1.756
+ET u|e|1.762
+M w:"order_robots"
+M x:"Users.peterheinemann.Projects.playground.robocorp.python-level2.tasks"
+M y:"/Users/peterheinemann/Projects/playground/robocorp/python-level2/tasks.py"
+M z:"\n    Orders robots from RobotSpareBin Industries Inc.\n    Saves the order HTML receipt as a PDF file.\n    Saves the screenshot of the ordered robot.\n    Embeds the screenshot of the robot to the PDF receipt.\n    Creates ZIP archive of the receipts and the images.\n    "
+P v:w|x|y|z|14
+ST v|1.762
+M A:"============================ "
+C f|A|1.763
+M B:"Running: "
+C f|B|1.763
+M C:"task_name"
+C C|w|1.763
+M D:" =============================\n"
+C f|D|1.763
+SE v|n|1.763
+P E:w|x|y|e|22
+M F:"out_path"
+M G:"str"
+M H:"'output/receipts'"
+AS E|F|G|H|1.763
+M J:"open_order_site"
+P I:J|x|y|e|39
+SE I|n|1.763
+M L:"wrapper"
+M M:"RPA.Browser.common"
+M N:"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/RPA/Browser/common.py"
+P K:L|M|N|e|33
+SE K|n|1.763
+M O:"(<RPA.Browser.Selenium.Selenium object at 0x10a8b06d0>, 'https://robotsparebinindustries.com/#/robot-order')"
+EA o|p|O
+EA r|s|t
+P P:L|M|N|e|36
+M Q:"int"
+M R:"1"
+R P|Q|R|4.439
+EE n|u|4.453
+EE n|u|4.453
+M T:"download_and_read_csv_data"
+P S:T|x|y|e|55
+SE S|n|4.454
+M V:"HTTP.__init__"
+M W:"RPA.HTTP"
+M X:"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/RPA/HTTP.py"
+P U:V|W|X|e|91
+SE U|n|4.473
+EA o|p|q
+EA r|s|t
+EE n|u|4.474
+P Y:T|x|y|e|61
+M Z:"http"
+M 0:"HTTP"
+M 2:"<RPA.HTTP.HTTP object at 0x10da16b30>"
+AS Y|Z|0|2|4.492
+M 4:"HTTP.download"
+P 3:4|W|X|e|188
+SE 3|n|4.492
+M 5:"url"
+M 6:"'https://robotsparebinindustries.com/orders.csv'"
+EA 5|G|6
+M 7:"target_file"
+M 8:"'orders.csv'"
+EA 7|G|8
+M 9:"verify"
+M aa:"bool"
+M ab:"True"
+EA 9|aa|ab
+M ac:"force_new_session"
+M ad:"False"
+EA ac|aa|ad
+M ae:"overwrite"
+EA ae|aa|ad
+M af:"stream"
+EA af|aa|ad
+EA r|s|t
+P ag:4|W|X|e|260
+M ah:"Response"
+M ai:"<Response [200]>"
+R ag|ah|ai|4.662
+EE n|u|4.662
+P aj:T|x|y|e|62
+M ak:"res"
+AS aj|ak|ah|ai|4.663
+M am:"Response.text"
+M an:"requests.models"
+M ao:"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/requests/models.py"
+P al:am|an|ao|e|907
+SE al|n|4.663
+P ap:am|an|ao|e|942
+M aq:"'Order number,Head,Body,Legs,Address\\n1,1,2,3,Address 123\\n2,4,1,5,Address 456\\n3,6,2,3,Address 789\\n4,2,3,2,Address 1\\n5,3,5,1,Address 2\\n6,1,6,6,Address 3\\n7,5,1,5,Address 4\\n8,2,3,3,Address 5\\n9,3,2,2,Address 6\\n10,4,4,2,Address 7\\n11,6,6,1,Address 8\\n12,1,3,3,Address 9\\n13,1,5,4,Address A\\n14,3,1,5,Address B\\n15,3,2,6,Address C\\n16,6,3,6,Address D\\n17,5,4,1,Address E\\n18,2,5,1,Address F\\n19,4,6,2,Address G\\n20,1,1,5,Address H'"
+R ap|G|aq|4.663
+EE n|u|4.663
+M as:"DictReader.__init__"
+M at:"csv"
+M au:"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/csv.py"
+P ar:as|at|au|e|81
+SE ar|n|4.663
+M av:"f"
+M aw:"list"
+M ax:"['Order number,Head,Body,Legs,Address', '1,1,2,3,Address 123', '2,4,1,5,Address 456', '3,6,2,3,Address 789', '4,2,3,2,Address 1', '5,3,5,1,Address 2', '6,1,6,6,Address 3', '7,5,1,5,Address 4', '8,2,3,3,Address 5', '9,3,2,2,Address 6', '10,4,4,2,Address 7', '11,6,6,1,Address 8', '12,1,3,3,Address 9', '13,1,5,4,Address A', '14,3,1,5,Address B', '15,3,2,6,Address C', '16,6,3,6,Address D', '17,5,4,1,Address E', '18,2,5,1,Address F', '19,4,6,2,Address G', '20,1,1,5,Address H']"
+EA av|aw|ax
+M ay:"fieldnames"
+M az:"NoneType"
+M aA:"None"
+EA ay|az|aA
+M aB:"restkey"
+EA aB|az|aA
+M aC:"restval"
+EA aC|az|aA
+M aD:"dialect"
+M aE:"'excel'"
+EA aD|G|aE
+EA o|p|q
+M aF:"kwds"
+M aG:"{'delimiter': ','}"
+EA aF|s|aG
+EE n|u|4.664
+P aH:T|x|y|e|65
+M aI:"csv_reader"
+M aJ:"DictReader"
+M aK:"<csv.DictReader object at 0x10da15630>"
+AS aH|aI|aJ|aK|4.664
+P aL:T|x|y|e|66
+M aM:"[{'Order number': '1', 'Head': '1', 'Body': '2', 'Legs': '3', 'Address': 'Address 123'}, {'Order number': '2', 'Head': '4', 'Body': '1', 'Legs': '5', 'Address': 'Address 456'}, {'Order number': '3', 'Head': '6', 'Body': '2', 'Legs': '3', 'Address': 'Address 789'}, {'Order number': '4', 'Head': '2', 'Body': '3', 'Legs': '2', 'Address': 'Address 1'}, {'Order number': '5', 'Head': '3', 'Body': '5', 'Legs': '1', 'Address': 'Address 2'}, {'Order number': '6', 'Head': '1', 'Body': '6', 'Legs': '6', 'Address': 'Address 3'}, {'Order number': '7', 'Head': '5', 'Body': '1', 'Legs': '5', 'Address': 'Address 4'}, {'Order number': '8', 'Head': '2', 'Body': '3', 'Legs': '3', 'Address': 'Address 5'}, {'Order number': '9', 'Head': '3', 'Body': '2', 'Legs': '2', 'Address': 'Address 6'}, {'Order number': '10', 'Head': '4', 'Body': '4', 'Legs': '2', 'Address': 'Address 7'}, {'Order number': '11', 'Head': '6', 'Body': '6', 'Legs': '1', 'Address': 'Address 8'}, {'Order number': '12', 'Head': '1', 'Body': '3', 'Legs': '3', 'Address': 'Address 9'}, {'Order number': '13', 'Head': '1', 'Body': '5', 'Legs': '4', 'Address': 'Address A'}, {'Order number': '14', 'Head': '3', 'Body': '1', 'Legs': '5', 'Address': 'Address B'}, {'Order number': '15', 'Head': '3', 'Body': '2', 'Legs': '6', 'Address': 'Address C'}, {'Order number': '16', 'Head': '6', 'Body': '3', 'Legs': '6', 'Address': 'Address D'}, {'Order number': '17', 'Head': '5', 'Body': '4', 'Legs': '1', 'Address': 'Address E'}, {'Order number': '18', 'Head': '2', 'Body': '5', 'Legs': '1', 'Address': 'Address F'}, {'Order number': '19', 'Head': '4', 'Body': '6', 'Legs': '2', 'Address': 'Address G'}, {'Order number': '20', 'Head': '1', 'Body': '1', 'Legs': '5', 'Address': 'Address H'}]"
+AS aL|at|aw|aM|4.665
+M aO:"Tables.__init__"
+M aP:"RPA.Tables"
+M aQ:"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/RPA/Tables.py"
+P aN:aO|aP|aQ|e|989
+SE aN|n|4.665
+EE n|u|4.665
+P aR:T|x|y|e|67
+M aS:"table"
+M aT:"Tables"
+M aU:"<RPA.Tables.Tables object at 0x10df69a80>"
+AS aR|aS|aT|aU|4.666
+M aW:"Tables.create_table"
+P aV:aW|aP|aQ|e|997
+SE aV|n|4.666
+M aX:"data"
+EA aX|aw|aM
+M aY:"trim"
+EA aY|aa|ad
+M aZ:"columns"
+EA aZ|az|aA
+P a0:aW|aP|aQ|e|1036
+M a1:"Table"
+M a2:"Table(columns=['Order number', 'Head', 'Body', 'Legs', 'Address'], rows=20)"
+R a0|a1|a2|4.669
+EE n|u|4.67
+P a3:T|x|y|e|68
+M a4:"data_table"
+AS a3|a4|a1|a2|4.67
+M a6:"Tables.read_table_from_csv"
+P a5:a6|aP|aQ|e|1856
+SE a5|n|4.67
+M a7:"path"
+EA a7|G|8
+M a8:"header"
+EA a8|az|aA
+EA aZ|az|aA
+EA aD|az|aA
+M a9:"delimiters"
+EA a9|az|aA
+M ba:"column_unknown"
+M bb:"'Unknown'"
+EA ba|G|bb
+M bc:"encoding"
+EA bc|az|aA
+P bd:a6|aP|aQ|e|1940
+R bd|a1|a2|4.678
+EE n|u|4.678
+P be:T|x|y|e|69
+M bf:"data_table_2"
+AS be|bf|a1|a2|4.678
+P bg:w|x|y|e|24
+M bh:"order_data"
+M bi:"KeyboardInterrupt"
+M bj:"KeyboardInterrupt()"
+AS bg|bh|bi|bj|12.507
+M bl:"for (i, row) in enumerate(order_data)"
+P bk:bl|x|y|e|25
+M bm:"FOR"
+SE bk|bm|12.507
+M bn:"KeyboardInterrupt: "
+STB bn|12.508
+M bo:"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/tasks/_task.py"
+M bp:"run"
+M bq:"self.method()"
+TBE bo|30|bp|bq
+M br:"self"
+M bs:"Task"
+M bt:"Task(order_robots, status: NOT_RUN)"
+TBV br|bs|bt
+M bu:"out_path = \"output/receipts\""
+TBE y|22|w|bu
+TBV F|G|H
+TBV bh|bi|bj
+M bv:"return table.create_table(csv)"
+TBE y|70|T|bv
+TBV Z|0|2
+TBV ak|ah|ai
+TBV aI|aJ|aK
+TBV at|aw|aM
+TBV aS|aT|aU
+TBV a4|a1|a2
+TBV bf|a1|a2
+TBE y|70|T|bv
+TBV Z|0|2
+TBV ak|ah|ai
+TBV aI|aJ|aK
+TBV at|aw|aM
+TBV aS|aT|aU
+TBV a4|a1|a2
+TBV bf|a1|a2
+M bw:"_pydevd_bundle/pydevd_cython_darwin_310_64.pyx"
+M bx:"_pydevd_bundle.pydevd_cython_darwin_310_64.ThreadTracer.__call__"
+TBE bw|1589|bx|e
+M by:"_pydevd_bundle.pydevd_cython_darwin_310_64.PyDBFrame.trace_dispatch"
+TBE bw|929|by|e
+TBE bw|920|by|e
+M bz:"_pydevd_bundle.pydevd_cython_darwin_310_64.PyDBFrame.do_wait_suspend"
+TBE bw|317|bz|e
+M bA:"/Users/peterheinemann/Applications/PyCharm Professional.app/Contents/plugins/python/helpers/pydev/pydevd.py"
+M bB:"do_wait_suspend"
+M bC:"self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)"
+TBE bA|1160|bB|bC
+M bD:"PyDB"
+M bE:"<__main__.PyDB object at 0x10a58afe0>"
+TBV br|bD|bE
+M bF:"thread"
+M bG:"_MainThread"
+M bH:"<_MainThread(MainThread, started 140704708107072)>"
+TBV bF|bG|bH
+M bI:"frame"
+M bJ:"<frame at 0x7fac5a32c560, file '/Users/peterheinemann/Projects/playground/robocorp/python-level2/tasks.py', line 61, code download_and_read_csv_data>"
+TBV bI|bI|bJ
+M bK:"event"
+M bL:"'line'"
+TBV bK|G|bL
+M bM:"arg"
+TBV bM|az|aA
+M bN:"send_suspend_message"
+TBV bN|aa|ab
+M bO:"is_unhandled_exception"
+TBV bO|aa|ad
+M bP:"thread_stack_str"
+M bQ:"'<frame id=\"140378224379232\" name=\"download_and_read_csv_data\" file=\"/Users/peterheinemann/Projects/playground/robocorp/python-level2/tasks.py\" line=\"70\"></frame><frame id=\"140378222806896\" name=\"order_robots\" file=\"/Users/peterheinemann/Projects/playground/robocorp/python-level2/tasks.py\" line=\"24\"></frame><frame id=\"4521251392\" name=\"run\" file=\"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/tasks/_task.py\" line=\"30\"></frame><frame id=\"140378482505232\" name=\"run\" file=\"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/tasks/_commands.py\" line=\"243\"></frame><frame id=\"4469200272\" name=\"_dispatch\" file=\"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/tasks/_argdispatch.py\" line=\"20\"></frame><frame id=\"4469178432\" name=\"process_args\" file=\"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/tasks/_argdispatch.py\" line=\"145\"></frame><frame id=\"4468841088\" name=\"main\" file=\"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/tasks/cli.py\" line=\"23\"></frame><frame id=\"4468835808\" name=\"&lt;module&gt;\" file=\"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/tasks/__main__.py\" line=\"4\"></frame><frame id=\"140378481579904\" name=\"_run_code\" file=\"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/runpy.py\" line=\"86\"></frame><frame id=\"4466326592\" name=\"_run_module_as_main\" file=\"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/runpy.py\" line=\"196\"></frame>'"
+TBV bP|G|bQ
+M bR:"thread_id"
+M bS:"'pid_43191_id_4450796736'"
+TBV bR|G|bS
+M bT:"stop_reason"
+M bU:"111"
+TBV bT|Q|bU
+M bV:"suspend_type"
+M bW:"'frame_eval'"
+TBV bV|G|bW
+M bX:"message"
+M bY:"''"
+TBV bX|G|bY
+M bZ:"frame_to_lineno"
+TBV bZ|s|t
+M b0:"cmd"
+M b1:"NetCommand"
+M b2:"<_pydevd_bundle.pydevd_comm.NetCommand object at 0x10df6acb0>"
+TBV b0|b1|b2
+M b3:"from_this_thread"
+M b4:"[]"
+TBV b3|aw|b4
+M b5:"_do_wait_suspend"
+M b6:"time.sleep(0.01)"
+TBE bA|1175|b5|b6
+TBV br|bD|bE
+TBV bF|bG|bH
+TBV bI|bI|bJ
+TBV bK|G|bL
+TBV bM|az|aA
+TBV bV|G|bW
+TBV b3|aw|b4
+M b7:"info"
+M b8:"PyDBAdditionalThreadInfo"
+M b9:"<_pydevd_bundle.pydevd_cython_darwin_310_64.PyDBAdditionalThreadInfo object at 0x10a5e2f80>"
+TBV b7|b8|b9
+ETB 12.514
+M ca:"TypeError: 'KeyboardInterrupt' object is not iterable (this exception occurred during handling of the previous exception)"
+STB ca|12.514
+TBE bo|30|bp|bq
+TBV br|bs|bt
+M cb:"for i, row in enumerate(order_data):"
+TBE y|25|w|cb
+TBV F|G|H
+TBV bh|bi|bj
+ETB 12.515
+M cc:"ERROR"
+EE bm|cc|12.515
+M cd:"On method return status stack package/name was: Users.peterheinemann.Projects.playground.robocorp.python-level2.tasks.download_and_read_csv_data. Received: Users.peterheinemann.Projects.playground.robocorp.python-level2.tasks.order_robots."
+M cf:"_call_after_element"
+M cg:"robocorp.log"
+M ch:"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/log/_auto_logging_setup.py"
+P ce:cf|cg|ch|e|230
+L E|cd|ce|230|12.515
+C C|w|12.515
+M ci:" status: "
+C f|ci|12.516
+M cj:"error"
+M ck:"ERROR\n"
+C cj|ck|12.516
+M cl:"\n'KeyboardInterrupt' object is not iterable\n"
+C cj|cl|12.516
+M cm:"==================== "
+C f|cm|12.516
+M cn:"Full Traceback (running "
+C f|cn|12.516
+C C|w|12.516
+M co:")"
+C f|co|12.516
+M cp:" =====================\n"
+C f|cp|12.516
+M cq:"traceback"
+M cr:"Traceback (most recent call last):\n  File \"/Users/peterheinemann/Projects/playground/robocorp/python-level2/tasks.py\", line 70, in download_and_read_csv_data\n    return table.create_table(csv)\n  File \"/Users/peterheinemann/Projects/playground/robocorp/python-level2/tasks.py\", line 70, in download_and_read_csv_data\n    return table.create_table(csv)\n  File \"_pydevd_bundle/pydevd_cython_darwin_310_64.pyx\", line 1589, in _pydevd_bundle.pydevd_cython_darwin_310_64.ThreadTracer.__call__\n  File \"_pydevd_bundle/pydevd_cython_darwin_310_64.pyx\", line 929, in _pydevd_bundle.pydevd_cython_darwin_310_64.PyDBFrame.trace_dispatch\n  File \"_pydevd_bundle/pydevd_cython_darwin_310_64.pyx\", line 920, in _pydevd_bundle.pydevd_cython_darwin_310_64.PyDBFrame.trace_dispatch\n  File \"_pydevd_bundle/pydevd_cython_darwin_310_64.pyx\", line 317, in _pydevd_bundle.pydevd_cython_darwin_310_64.PyDBFrame.do_wait_suspend\n  File \"/Users/peterheinemann/Applications/PyCharm Professional.app/Contents/plugins/python/helpers/pydev/pydevd.py\", line 1160, in do_wait_suspend\n    self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread)\n  File \"/Users/peterheinemann/Applications/PyCharm Professional.app/Contents/plugins/python/helpers/pydev/pydevd.py\", line 1175, in _do_wait_suspend\n    time.sleep(0.01)\nKeyboardInterrupt\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/tasks/_commands.py\", line 243, in run\n    task.run()\n  File \"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/tasks/_task.py\", line 30, in run\n    self.method()\n  File \"/Users/peterheinemann/Projects/playground/robocorp/python-level2/tasks.py\", line 25, in order_robots\n    for i, row in enumerate(order_data):\nTypeError: 'KeyboardInterrupt' object is not iterable\n\n"
+C cq|cr|12.517
+M cs:"================================================================================\n"
+C f|cs|12.517
+M ct:"'KeyboardInterrupt' object is not iterable"
+ET cc|ct|12.517
+M cu:"Robocorp Log Warning: element - Users.peterheinemann.Projects.playground.robocorp.python-level2.tasks.download_and_read_csv_data did not have a corresponding pop.\n"
+C h|cu|12.517
+M cv:"Robocorp Log Warning: element - Users.peterheinemann.Projects.playground.robocorp.python-level2.tasks.order_robots did not have a corresponding pop.\n"
+C h|cv|12.517
+M cx:"Teardown tasks"
+M cy:"teardown"
+P cw:cx|cy|e|e|0
+ST cw|12.518
+M cz:"Process snapshot"
+SPS cz|12.518
+M cA:"System information:\nMemory: Total: 32.0 G, Available: 14.3 G, Used: 55.3 %\nCPUs: 12"
+P cB:e|e|e|e|0
+L I|cA|cB|0|12.535
+M cC:"Subprocess: chromedriver (pid: 43233, status: zombie)\nCommand Line: <unknown>\nStarted: 15:22:28\nParent pid: 43191\nResident Set Size: <unknown>\nVirtual Memory Size: <unknown>"
+L I|cC|cB|0|12.61
+M cD:"pydevd.CommandThread|Thread ID: 123145463918592 (daemon)"
+STD cD|12.665
+M cE:"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/threading.py"
+M cF:"_bootstrap"
+M cG:"self._bootstrap_inner()"
+TBE cE|973|cF|cG
+M cH:"PyDBCommandThread"
+M cI:"<PyDBCommandThread(pydevd.CommandThread, started daemon 123145463918592)>"
+TBV br|cH|cI
+M cJ:"_bootstrap_inner"
+M cK:"self.run()"
+TBE cE|1016|cJ|cK
+TBV br|cH|cI
+M cL:"/Users/peterheinemann/Applications/PyCharm Professional.app/Contents/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_comm.py"
+M cM:"self._on_run()"
+TBE cL|219|bp|cM
+TBV br|cH|cI
+M cN:"created_pydb_daemon"
+M cO:"{<WriterThread(pydevd.Writer, started daemon 123145430339584)>: 1, <ReaderThread(pydevd.Reader, started daemon 123145447129088)>: 1, <PyDBCommandThread(pydevd.CommandThread, started daemon 123145463918592)>: 1}"
+TBV cN|s|cO
+M cP:"_on_run"
+M cQ:"self._py_db_command_thread_event.wait(0.3)"
+TBE bA|150|cP|cQ
+TBV br|cH|cI
+M cR:"wait"
+M cS:"signaled = self._cond.wait(timeout)"
+TBE cE|607|cR|cS
+M cT:"Event"
+M cU:"<threading.Event object at 0x10a5cd120>"
+TBV br|cT|cU
+M cV:"timeout"
+M cW:"float"
+M cX:"0.3"
+TBV cV|cW|cX
+M cY:"signaled"
+TBV cY|aa|ad
+M cZ:"gotit = waiter.acquire(True, timeout)"
+TBE cE|324|cR|cZ
+M c0:"Condition"
+M c1:"<Condition(<unlocked _thread.lock object at 0x10a5d6940>, 1)>"
+TBV br|c0|c1
+TBV cV|cW|cX
+M c2:"waiter"
+M c3:"lock"
+M c4:"<locked _thread.lock object at 0x110073ec0>"
+TBV c2|c3|c4
+M c5:"saved_state"
+TBV c5|az|aA
+M c6:"gotit"
+TBV c6|aa|ad
+ETD 12.841
+M c7:"pydevd.Reader|Thread ID: 123145447129088 (daemon)"
+STD c7|12.841
+TBE cE|973|cF|cG
+M c8:"ReaderThread"
+M c9:"<ReaderThread(pydevd.Reader, started daemon 123145447129088)>"
+TBV br|c8|c9
+TBE cE|1016|cJ|cK
+TBV br|c8|c9
+TBE cL|219|bp|cM
+TBV br|c8|c9
+TBV cN|s|cO
+M da:"r = self.sock.recv(1024)"
+TBE cL|293|cP|da
+TBV br|c8|c9
+M db:"read_buffer"
+TBV db|G|bY
+M dc:"r"
+M dd:"'151\\t25\\tpid_43191_id_4450796736\\t140378224379232\\tFRAME\\ttable\\t__pydev_val__\\n'"
+TBV dc|G|dd
+M de:"command"
+M df:"'151\\t25\\tpid_43191_id_4450796736\\t140378224379232\\tFRAME\\ttable\\t__pydev_val__'"
+TBV de|G|df
+M dg:"['151', '25', 'pid_43191_id_4450796736\\t140378224379232\\tFRAME\\ttable\\t__pydev_val__']"
+TBV o|aw|dg
+M dh:"cmd_id"
+M di:"151"
+TBV dh|Q|di
+ETD 12.841
+M dj:"pydevd.Writer|Thread ID: 123145430339584 (daemon)"
+STD dj|12.841
+TBE cE|973|cF|cG
+M dk:"WriterThread"
+M dl:"<WriterThread(pydevd.Writer, started daemon 123145430339584)>"
+TBV br|dk|dl
+TBE cE|1016|cJ|cK
+TBV br|dk|dl
+TBE cL|219|bp|cM
+TBV br|dk|dl
+TBV cN|s|cO
+M dm:"cmd = self.cmdQueue.get(1, 0.1)"
+TBE cL|368|cP|dm
+TBV br|dk|dl
+M dn:"<_pydevd_bundle.pydevd_comm.NetCommand object at 0x10ffe0b80>"
+TBV b0|b1|dn
+M do:"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/queue.py"
+M dp:"get"
+M dq:"raise Empty"
+TBE do|179|dp|dq
+M dr:"Queue"
+M ds:"<queue.Queue object at 0x10a5ce3e0>"
+TBV br|dr|ds
+M dt:"block"
+TBV dt|Q|R
+M du:"0.1"
+TBV cV|cW|du
+M dv:"endtime"
+M dw:"19382.558824739997"
+TBV dv|cW|dw
+M dx:"remaining"
+M dy:"-0.003150673001073301"
+TBV dx|cW|dy
+M dz:"self._waiters.remove(waiter)"
+TBE cE|332|cR|dz
+M dA:"<Condition(<unlocked _thread.lock object at 0x10a5eeb80>, 1)>"
+TBV br|c0|dA
+M dB:"0.09999901699848124"
+TBV cV|cW|dB
+M dC:"<locked _thread.lock object at 0x10d9ff000>"
+TBV c2|c3|dC
+TBV c5|az|aA
+TBV c6|aa|ad
+ETD 12.846
+M dD:"MainThread|Thread ID: 140704708107072 (non daemon)"
+STD dD|12.846
+M dE:"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/log/__init__.py"
+M dF:"process_snapshot"
+M dG:"robo_logger.process_snapshot()"
+TBE dE|268|dF|dG
+M dH:"logger_instances"
+M dI:"{<robocorp.log._robo_logger._RoboLogger object at 0x10a8006a0>: 1}"
+TBV dH|s|dI
+M dJ:"robo_logger"
+M dK:"_RoboLogger"
+M dL:"<robocorp.log._robo_logger._RoboLogger object at 0x10a8006a0>"
+TBV dJ|dK|dL
+M dM:"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/log/_robo_logger.py"
+M dN:"new_func"
+M dO:"return func(self, *args, **kwargs)"
+TBE dM|20|dN|dO
+TBV br|dK|dL
+TBV o|p|q
+TBV r|s|t
+M dP:"func"
+M dQ:"function"
+M dR:"<function _RoboLogger.process_snapshot at 0x10a7fb9a0>"
+TBV dP|dQ|dR
+M dS:"return self._robot_output_impl.process_snapshot(hide_vars)"
+TBE dM|419|dF|dS
+TBV br|dK|dL
+M dT:"hide_vars"
+TBV dT|aa|ad
+M dU:"/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/log/_robo_output_impl.py"
+M dV:"self._dump_threads(hide_vars)"
+TBE dU|764|dF|dV
+TBV dT|aa|ad
+M dW:"log"
+M dX:"module"
+M dY:"<module 'robocorp.log' from '/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/log/__init__.py'>"
+TBV dW|dX|dY
+M dZ:"entry_id"
+M d0:"'ps_2'"
+TBV dZ|G|d0
+M d1:"entry_type"
+M d2:"'process_snapshot'"
+TBV d1|G|d2
+M d3:"psutil"
+M d4:"<module 'psutil' from '/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/psutil/__init__.py'>"
+TBV d3|dX|d4
+M d5:"AccessDenied"
+M d6:"type"
+M d7:"<class 'psutil.AccessDenied'>"
+TBV d5|d6|d7
+M d8:"NoSuchProcess"
+M d9:"<class 'psutil.NoSuchProcess'>"
+TBV d8|d6|d9
+M ea:"ZombieProcess"
+M eb:"<class 'psutil.ZombieProcess'>"
+TBV ea|d6|eb
+M ec:"curr_process"
+M ed:"Process"
+M ee:"psutil.Process(pid=43191, name='python3.10', status='running', started='15:22:25')"
+TBV ec|ed|ee
+M ef:"log_info"
+M eg:"<function _RoboOutputImpl.process_snapshot.<locals>.log_info at 0x10dfb67a0>"
+TBV ef|dQ|eg
+M eh:"memory_info"
+M ei:"'Total: 32.0 G, Available: 14.3 G, Used: 55.3 %'"
+TBV eh|G|ei
+M ej:"child_i"
+TBV ej|Q|R
+M ek:"child"
+M el:"psutil.Process(pid=43233, name='chromedriver', status='zombie', started='15:22:28')"
+TBV ek|ed|el
+M em:"name"
+M en:"'chromedriver'"
+TBV em|G|en
+M eo:"status"
+M ep:"'zombie'"
+TBV eo|G|ep
+M eq:"create_time"
+M er:"'15:22:28'"
+TBV eq|G|er
+M es:"ppid"
+M et:"'43191'"
+TBV es|G|et
+M eu:"cmdline"
+M ev:"'<unknown>'"
+TBV eu|G|ev
+M ew:"rss"
+TBV ew|G|ev
+M ex:"vms"
+TBV ex|G|ev
+M ey:"proc_memory_info"
+M ez:"pmem"
+M eA:"pmem(rss=97964032, vms=35972833280, pfaults=49949, pageins=113)"
+TBV ey|ez|eA
+M eB:"'Subprocess: chromedriver (pid: 43233, status: zombie)\\nCommand Line: <unknown>\\nStarted: 15:22:28\\nParent pid: 43191\\nResident Set Size: <unknown>\\nVirtual Memory Size: <unknown>'"
+TBV bX|G|eB
+M eC:"_RoboOutputImpl"
+M eD:"<robocorp.log._robo_output_impl._RoboOutputImpl object at 0x10a801e70>"
+TBV br|eC|eD
+M eE:"_dump_threads"
+M eF:"stack.append((f, f.f_lineno))"
+TBE dU|785|eE|eF
+TBV br|eC|eD
+TBV dT|aa|ad
+M eG:"140704708107072"
+TBV bR|Q|eG
+M eH:"<frame at 0x110081840, file '/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/log/_robo_output_impl.py', line 789, code _dump_threads>"
+TBV bI|bI|eH
+TBV bF|bG|bH
+M eI:"title"
+M eJ:"'MainThread|Thread ID: 140704708107072 (non daemon)'"
+TBV eI|G|eJ
+M eK:"<frame at 0x7fac69957610, file '/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/tasks/_commands.py', line 259, code run>"
+TBV av|bI|eK
+M eL:"stack"
+M eM:"[(<frame at 0x10e033300, file '/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/log/__init__.py', line 268, code process_snapshot>, 268), (<frame at 0x10a626840, file '/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/log/_robo_logger.py', line 20, code new_func>, 20), (<frame at 0x10a626240, file '/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/log/_robo_logger.py', line 419, code process_snapshot>, 419), (<frame at 0x7fac8a0e9d60, file '/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/log/_robo_output_impl.py', line 764, code process_snapshot>, 764), (<frame at 0x110081840, file '/usr/local/Caskroom/miniconda/base/envs/robocorp/lib/python3.10/site-packages/robocorp/log/_robo_output_impl.py', line 789, code _dump_threads>, 785)]"
+TBV eL|aw|eM
+ETD 12.852
+EPS 12.852
+ET u|e|12.852
+ER cc|12.852

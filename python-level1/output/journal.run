@@ -1,0 +1,50 @@
+{"when":1698329043,"controller":"rcc.robocorpcode","event":"run","detail":"robot","comment":"task run"}
+{"when":1698329043,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 0 to 1 ... map[53312:rcc]"}
+{"when":1698329043,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 1 to 1 ... map[53312:python3.10]"}
+{"when":1698329046,"controller":"rcc.robocorpcode","event":"robot exit","detail":"From rcc point of view, \"actual main robot run\" was SUCCESS.","comment":"rcc point of view"}
+{"when":1698329046,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 1 to 0 ... map[]"}
+{"when":1698329046,"controller":"rcc.robocorpcode","event":"processes","detail":"final","comment":"count: 0"}
+{"when":1698329047,"controller":"rcc.robocorpcode","event":"stop","detail":"robot","comment":"done"}
+{"when":1698330532,"controller":"rcc.robocorpcode","event":"start task","detail":"name=Minimal Task from=/Users/peterheinemann/Projects/playground/robocorp/python-level1/robot.yaml","comment":"at task environment setup"}
+{"when":1698330532,"controller":"rcc.robocorpcode","event":"environment","detail":"build","comment":"Progress: 01/15 v16.5.0 0.024s Fresh [shared mode] holotree environment d7ff3256-5d86-221d-5fbc-208424fe9e89. (parent/pid: 62282/62283)"}
+{"when":1698330532,"controller":"rcc.robocorpcode","event":"environment","detail":"build","comment":"Progress: 02/15 v16.5.0 0.022s Holotree blueprint is \"79364ef194611169\" [darwin_amd64 with 11 workers on 12 CPUs]."}
+{"when":1698330533,"controller":"rcc.robocorpcode","event":"environment","detail":"build","comment":"Progress: 14/15 v16.5.0 0.272s Restore space from library [with 11 workers on 12 CPUs]."}
+{"when":1698330534,"controller":"rcc.robocorpcode","event":"environment","detail":"build","comment":"Progress: 15/15 v16.5.0 0.813s Fresh holotree done [with 11 workers on 12 CPUs]."}
+{"when":1698330534,"controller":"rcc.robocorpcode","event":"start","detail":"robot","comment":"started"}
+{"when":1698330534,"controller":"rcc.robocorpcode","event":"run","detail":"robot","comment":"task run"}
+{"when":1698330534,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 0 to 1 ... map[62301:python3.10]"}
+{"when":1698330535,"controller":"rcc.robocorpcode","event":"robot exit","detail":"From rcc point of view, \"actual main robot run\" was SUCCESS.","comment":"rcc point of view"}
+{"when":1698330535,"controller":"rcc.robocorpcode","event":"processes","detail":"final","comment":"count: 0"}
+{"when":1698330536,"controller":"rcc.robocorpcode","event":"stop","detail":"robot","comment":"done"}
+{"when":1699361799,"controller":"rcc.robocorpcode","event":"start task","detail":"name=Minimal Task from=/Users/peterheinemann/Projects/playground/robocorp/python-level1/robot.yaml","comment":"at task environment setup"}
+{"when":1699361799,"controller":"rcc.robocorpcode","event":"environment","detail":"build","comment":"Progress: 01/15 v16.5.0 0.027s Fresh [shared mode] holotree environment d7ff3256-5d86-221d-5fbc-208424fe9e89. (parent/pid: 27855/27856)"}
+{"when":1699361799,"controller":"rcc.robocorpcode","event":"environment","detail":"build","comment":"Progress: 02/15 v16.5.0 0.021s Holotree blueprint is \"79364ef194611169\" [darwin_amd64 with 11 workers on 12 CPUs]."}
+{"when":1699361799,"controller":"rcc.robocorpcode","event":"environment","detail":"build","comment":"Progress: 14/15 v16.5.0 0.389s Restore space from library [with 11 workers on 12 CPUs]."}
+{"when":1699361800,"controller":"rcc.robocorpcode","event":"environment","detail":"build","comment":"Progress: 15/15 v16.5.0 0.855s Fresh holotree done [with 11 workers on 12 CPUs]."}
+{"when":1699361800,"controller":"rcc.robocorpcode","event":"start","detail":"robot","comment":"started"}
+{"when":1699361800,"controller":"rcc.robocorpcode","event":"run","detail":"robot","comment":"task run"}
+{"when":1699361800,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 0 to 1 ... map[27875:python3.10]"}
+{"when":1699361816,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 1 to 2 ... map[27875:python3.10 27985:Google Chrome]"}
+{"when":1699361817,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 2 to 2 ... map[27875:python3.10 27988:sh]"}
+{"when":1699361817,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 2 to 2 ... map[27875:python3.10 28000:Google Chrome]"}
+{"when":1699361817,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 2 to 2 ... map[27875:python3.10 28001:chromedriver]"}
+{"when":1699361817,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 2 to 3 ... map[27875:python3.10 28001:chromedriver 28005:Google Chrome]"}
+{"when":1699361818,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 3 to 5 ... map[27875:python3.10 28001:chromedriver 28005:Google Chrome 28011:ksinstall 28012:bsdtar]"}
+{"when":1699361818,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 5 to 9 ... map[27875:python3.10 28001:chromedriver 28005:Google Chrome 28011:ksinstall 28012:bsdtar 28013:Google Chrome He 28014:Google Chrome He 28015:Google Chrome He 28016:Google Chrome He]"}
+{"when":1699361818,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 9 to 10 ... map[27875:python3.10 28001:chromedriver 28005:Google Chrome 28011:ksinstall 28013:Google Chrome He 28014:Google Chrome He 28015:Google Chrome He 28016:Google Chrome He 28020:Google Chrome He 28021:Google Chrome He]"}
+{"when":1699361818,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 10 to 9 ... map[27875:python3.10 28001:chromedriver 28005:Google Chrome 28013:Google Chrome He 28014:Google Chrome He 28015:Google Chrome He 28020:Google Chrome He 28021:Google Chrome He 28023:ksadmin]"}
+{"when":1699361819,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 9 to 11 ... map[27875:python3.10 28001:chromedriver 28005:Google Chrome 28013:Google Chrome He 28014:Google Chrome He 28015:Google Chrome He 28020:Google Chrome He 28021:Google Chrome He 28023:ksadmin 28024:launcher 28029:Google Chrome He]"}
+{"when":1699361819,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 11 to 8 ... map[27875:python3.10 28001:chromedriver 28005:Google Chrome 28013:Google Chrome He 28014:Google Chrome He 28015:Google Chrome He 28020:Google Chrome He 28029:Google Chrome He]"}
+{"when":1699361819,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 8 to 9 ... map[27875:python3.10 28001:chromedriver 28005:Google Chrome 28013:Google Chrome He 28014:Google Chrome He 28015:Google Chrome He 28020:Google Chrome He 28029:Google Chrome He 28037:Google Chrome He]"}
+{"when":1699361824,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 9 to 8 ... map[27875:python3.10 28001:chromedriver 28005:Google Chrome 28013:Google Chrome He 28014:Google Chrome He 28015:Google Chrome He 28020:Google Chrome He 28029:Google Chrome He]"}
+{"when":1699361833,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 8 to 9 ... map[27875:python3.10 28001:chromedriver 28005:Google Chrome 28013:Google Chrome He 28014:Google Chrome He 28015:Google Chrome He 28020:Google Chrome He 28029:Google Chrome He 28108:Google Chrome He]"}
+{"when":1699361833,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 9 to 8 ... map[27875:python3.10 28001:chromedriver 28005:Google Chrome 28013:Google Chrome He 28014:Google Chrome He 28015:Google Chrome He 28020:Google Chrome He 28029:Google Chrome He]"}
+{"when":1699361834,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 8 to 9 ... map[27875:python3.10 28001:chromedriver 28005:Google Chrome 28013:Google Chrome He 28014:Google Chrome He 28015:Google Chrome He 28020:Google Chrome He 28029:Google Chrome He 28116:Google Chrome He]"}
+{"when":1699361834,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 9 to 8 ... map[27875:python3.10 28001:chromedriver 28005:Google Chrome 28013:Google Chrome He 28014:Google Chrome He 28015:Google Chrome He 28020:Google Chrome He 28029:Google Chrome He]"}
+{"when":1699361835,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 8 to 9 ... map[27875:python3.10 28001:chromedriver 28005:Google Chrome 28013:Google Chrome He 28014:Google Chrome He 28015:Google Chrome He 28020:Google Chrome He 28029:Google Chrome He 28122:Google Chrome He]"}
+{"when":1699361836,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 9 to 8 ... map[27875:python3.10 28001:chromedriver 28005:Google Chrome 28013:Google Chrome He 28014:Google Chrome He 28015:Google Chrome He 28020:Google Chrome He 28029:Google Chrome He]"}
+{"when":1699361841,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 8 to 3 ... map[27875:python3.10 28001:chromedriver 28005:Google Chrome]"}
+{"when":1699361842,"controller":"rcc.robocorpcode","event":"processes","detail":"updated","comment":"count from 3 to 1 ... map[27875:python3.10]"}
+{"when":1699361842,"controller":"rcc.robocorpcode","event":"robot exit","detail":"From rcc point of view, \"actual main robot run\" was SUCCESS.","comment":"rcc point of view"}
+{"when":1699361842,"controller":"rcc.robocorpcode","event":"processes","detail":"final","comment":"count: 0"}
+{"when":1699361843,"controller":"rcc.robocorpcode","event":"stop","detail":"robot","comment":"done"}

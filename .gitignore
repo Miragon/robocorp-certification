@@ -1,0 +1,22 @@
+# IDEs
+**/.idea
+**/.vscode
+
+# Robocorp
+**/output/
+**/venv/
+**/temp/
+**/.rpa/
+**/.ipynb_checkpoints/
+**/*/.ipynb_checkpoints/*
+**/.virtual_documents/
+**/*/.virtual_documents/*
+**/*.pyc
+**/*.zip
+**/*/work-items-out/*
+**/testrun/*
+**/.~lock*
+**/*.pkl
+
+# OS generated files
+.DS_Store
