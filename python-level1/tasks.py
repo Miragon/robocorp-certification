@@ -78,4 +78,4 @@ def export_as_pdf():
 def log_out():
     """Presses the 'Log out' button"""
     browser.click_button("id:logout")
-    browser.close_browser()
+    # browser.close_browser()
