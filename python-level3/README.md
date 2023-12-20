@@ -70,7 +70,7 @@ All good on the code side, but we need now to make this new task visible and run
 
 ```yaml
 Reporter:
-    shell: python -m robocorp.tasks run tasks.py -t reporter
+    shell: python -m robocorp.tasks run consumer.py -t reporter
 ```
 
 Now you're good to go, just run the **consumer** again (so you'll have output items created), then run the newly introduced 3rd step called **reporter**.

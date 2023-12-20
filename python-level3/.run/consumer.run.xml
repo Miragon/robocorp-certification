@@ -26,7 +26,7 @@
       </ENTRIES>
     </EXTENSION>
     <option name="SCRIPT_NAME" value="robocorp.tasks" />
-    <option name="PARAMETERS" value="run tasks.py -t consume_traffic_data" />
+    <option name="PARAMETERS" value="run consumer.py -t consume_traffic_data" />
     <option name="SHOW_COMMAND_LINE" value="false" />
     <option name="EMULATE_TERMINAL" value="false" />
     <option name="MODULE_MODE" value="true" />
