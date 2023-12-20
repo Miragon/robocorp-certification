@@ -23,39 +23,135 @@ This is the repository that contains the robots for the different levels of cert
 
 ## Getting started
 
-1. Clone the repo
-   ```shell
-   git clone https://github.com/miragon/robocorp-certifications.git
-   cd robocorp-certifications
-   ```
+In the tutorials it is recommended to use [Visual Studio Code](https://code.visualstudio.com/) as the IDE.
+But it is possible to use any other IDE (e.g. *PyCharm*).
+These IDEs lacks some of the practical commands of Visual Studio Code,
+but you can use the [rcc](https://robocorp.com/docs/rcc/overview) command line tool to do this.
 
-2. Install [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/miniconda-install.html)
+1. [RCC](#rcc)
+2. [Conda](#conda)
+3. [PyCharm](#pycharm)
 
-   ```shell
-   brew install miniconda
-   conda init "$(basename "${SHELL}")"
-   ```
+## RCC
 
-3. Create a new conda environment
+In the following sections you will find some useful tips on how to set up and use `rcc`.
 
-   ```shell
-   conda env create -f conda.yaml -n robocorp
-   ```
+### Installation
 
-### Setup PyCharm
+```shell
+# MacOS
+brew install robocorp/tools/rcc
+```
 
-> Note: PyCharm lacks some of the practical commands of Visual Studio Code.
-> For example, bootstrapping a new robot project or uploading a robot to the *Control Room*.
-> But you can use the [rcc](https://robocorp.com/docs/rcc/overview) command line tool to do this.
+### Autocompletion in ZSH
+
+1. If there is no directory the environment variable `FPATH` add one
+   1. Create a directory in your home directory
    
-Open one of the projects in PyCharm and add new **Python Interpreter**
+      ```shell
+      mkdir ~/.zfunc
+      ```
+      
+   2. Open `~/.zshrc` in your favorite editor and add the following line
+   
+      ```text
+      fpath=(~/.zfunc $fpath)
+      ```
+
+2. Create the autocompletion script
+
+   ```shell
+   rcc completion > ~/.zfunc/_rcc
+   ```
+   
+3. Make the script executable
+
+   ```shell
+   chmod +x ~/.zfunc/_rcc
+   ```
+
+4. Reload your shell
+
+   ```shell
+   exec zsh
+   ```
+
+### Login to Control Room
+
+```shell
+rcc login
+```
+
+### Create a new robot project
+
+Enter the following command in the terminal and follow the instructions.
+
+```shell
+rcc create
+```
+
+### Upload a robot to Control Room
+
+1. Ensure that you are in the root directory of the robot project and enter the following command in the terminal
+
+   ```shell
+   rcc robot wrap
+   ```
+   
+2. Push the robot to Control Room
+
+   ```shell
+   rcc push
+   ```
+   
+## Conda
+
+### Installation
+
+```shell
+# MacOS
+brew install miniconda
+conda init "$(basename "${SHELL}")"
+```
+
+### Create a new environment
+
+If you used `rcc` to create a new robot project, you can use the `conda.yaml` file to create a new environment.
+
+```shell
+conda env create -f conda.yaml -n <your-conda-env>
+```
+
+## PyCharm
+
+### Setup `conda` as the **Python Interpreter**
+
+Open your robot project in PyCharm and add new **Python Interpreter**
 1. `PyCharm` > `Settings`
-2. `Project: python-level?` > `Python Interpreter`
+2. `Project: <your-project-name>` > `Python Interpreter`
 3. `Add Interpreter` > `Add Local Interpreter...`
 4. Select `Conda Environment` > `Existing environment`
-5. Select `robocorp` as the existing environment
+5. Select `<your-conda-env>` as the existing environment
 
-To run a robot you can use one of the *run configs* under the `.run` folder.
+### Setup Run Configurations
+
+1. Install `EnvFile` plugin for using JSON files instead of .env files
+   > Note: Dependent on the template you used while creating the project with `rcc` there might already be some
+   > environment variables under `/devdata`.
+   > These environment variables are stored in a JSON file.
+
+2. Add a Run Configuration
+
+   > ❗️You can find the necessary information for the *Run Configurations* in the `robot.yaml` file created by `rcc`.❗
+
+   > Note: You can find the *Run Configurations* under `.run` in the respective project folders.
+   
+   <p>
+      <img src="images/run-config.png" alt="Example of a Run Configuration" width="800"><br>
+      <em>Example of a Run Configuration</em>
+   </p>
+
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
