@@ -47,13 +47,13 @@ brew install robocorp/tools/rcc
 
 1. If there is no directory the environment variable `FPATH` add one
    1. Create a directory in your home directory
-   
+
       ```shell
       mkdir ~/.zfunc
       ```
-      
+
    2. Open `~/.zshrc` in your favorite editor and add the following line
-   
+
       ```text
       fpath=(~/.zfunc $fpath)
       ```
@@ -63,7 +63,7 @@ brew install robocorp/tools/rcc
    ```shell
    rcc completion > ~/.zfunc/_rcc
    ```
-   
+
 3. Make the script executable
 
    ```shell
@@ -76,12 +76,6 @@ brew install robocorp/tools/rcc
    exec zsh
    ```
 
-### Login to Control Room
-
-```shell
-rcc login
-```
-
 ### Create a new robot project
 
 Enter the following command in the terminal and follow the instructions.
@@ -92,18 +86,48 @@ rcc create
 
 ### Upload a robot to Control Room
 
-1. Ensure that you are in the root directory of the robot project and enter the following command in the terminal
+1. Ensure you have access to the workspace
+   1. Open the `Control Center`
+   2. Select your `Workspace` (top left corner)
+   3. Go to `User Settings` (top right corner)
+   4. Go to `Access Credentials` and add your credentials
+
+2. Add your credentials to the rcc config
 
    ```shell
-   rcc robot wrap
+   # Get the Workspace ID
+   rcc cloud workspace
    ```
-   
-2. Push the robot to Control Room
 
    ```shell
-   rcc push
+   # This will add the credentials to your default account
+   rcc configure credentials <YOUR_CREDENTIALS>
    ```
-   
+
+   ```shell
+   # This will add the credentials to a specific account or will create a new one
+   rcc configure -a <YOUR_ACCOUNT> credentials <YOUR_CREDENTIALS>
+   ```
+
+   > Note: You can find the file with the configuration at `$ROBOCORP_HOME/rcc.yml` (default: ~/.robocorp/rcc.yml)
+
+3. Create a new robot in your workspace
+
+   ```shell
+   rcc cloud new -r <YOUR_DESIRED_TASK_NAME> -w <WORKSPACE_ID>
+   ```
+
+4. Push your local robot to Control Room
+
+   ```shell
+   # Get the Task ID
+   rcc cloud workspace -w <WORKSPACE_ID>
+   ```
+
+   ```shell
+   rcc cloud push -r <TASK_ID> -w <WORKSPACE_ID>
+   ```
+
 ## Conda
 
 ### Installation
@@ -127,6 +151,7 @@ conda env create -f conda.yaml -n <your-conda-env>
 ### Setup `conda` as the **Python Interpreter**
 
 Open your robot project in PyCharm and add new **Python Interpreter**
+
 1. `PyCharm` > `Settings`
 2. `Project: <your-project-name>` > `Python Interpreter`
 3. `Add Interpreter` > `Add Local Interpreter...`
@@ -145,7 +170,7 @@ Open your robot project in PyCharm and add new **Python Interpreter**
    > ❗️You can find the necessary information for the *Run Configurations* in the `robot.yaml` file created by `rcc`.❗
 
    > Note: You can find the *Run Configurations* under `.run` in the respective project folders.
-   
+
    <p>
       <img src="images/run-config.png" alt="Example of a Run Configuration" width="800"><br>
       <em>Example of a Run Configuration</em>
