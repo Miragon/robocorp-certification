@@ -45,8 +45,8 @@ brew install robocorp/tools/rcc
 
 ### Autocompletion in ZSH
 
-1. If there is no directory the environment variable `FPATH` add one
-   1. Create a directory in your home directory
+1. If there the environment variable `FPATH` does not hold any value add one
+   1. Create a file in your home directory
 
       ```shell
       mkdir ~/.zfunc
@@ -161,7 +161,7 @@ Open your robot project in PyCharm and add new **Python Interpreter**
 ### Setup Run Configurations
 
 1. Install `EnvFile` plugin for using JSON files instead of .env files
-   > Note: Dependent on the template you used while creating the project with `rcc` there might already be some
+   > ℹ️ Dependent on the template you used while creating the project with `rcc` there might already be some
    > environment variables under `/devdata`.
    > These environment variables are stored in a JSON file.
 
@@ -169,7 +169,7 @@ Open your robot project in PyCharm and add new **Python Interpreter**
 
    > ⚠️ You can find the necessary information for the *Run Configurations* in the `robot.yaml` file created by `rcc`.
 
-   > ℹ️ You can find the *Run Configurations* under `.run` in the respective project folders.
+   > ℹ️ You can find my *Run Configurations* in `.run` in the respective project folders.
 
    <p>
       <img src="images/run-config.png" alt="Example of a Run Configuration" width="800"><br>
