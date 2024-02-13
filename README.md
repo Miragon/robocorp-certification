@@ -46,7 +46,7 @@ brew install robocorp/tools/rcc
 ### Autocompletion in ZSH
 
 1. If the environment variable `FPATH` does not hold any value add one
-   1. Create a directory in your home directory
+   1. Create a new folder in your home directory
 
       ```shell
       mkdir ~/.zfunc
