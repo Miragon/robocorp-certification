@@ -167,9 +167,9 @@ Open your robot project in PyCharm and add new **Python Interpreter**
 
 2. Add a Run Configuration
 
-   > ❗️You can find the necessary information for the *Run Configurations* in the `robot.yaml` file created by `rcc`.❗
+   > ⚠️ You can find the necessary information for the *Run Configurations* in the `robot.yaml` file created by `rcc`.
 
-   > Note: You can find the *Run Configurations* under `.run` in the respective project folders.
+   > ℹ️ You can find the *Run Configurations* under `.run` in the respective project folders.
 
    <p>
       <img src="images/run-config.png" alt="Example of a Run Configuration" width="800"><br>
